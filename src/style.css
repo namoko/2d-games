@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  color: white;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  height: 100%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.gameSelector {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.gameContainer {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.game {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.debug {
+  position: absolute;
+}
+
+.sprite {
+  position: absolute;
+  user-select: none;
+}
+
+.sprite > img {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.sprite > .debug {
+  position: absolute;
+  border: 1px solid #00ffff;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
